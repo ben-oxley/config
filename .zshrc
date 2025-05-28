@@ -38,3 +38,5 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 export PATH=$PATH:/home/ben/.local/bin/
 eval "$(oh-my-posh init zsh)"
 eval "$(oh-my-posh init zsh --config ~/oh-my-posh-config.json)"
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
